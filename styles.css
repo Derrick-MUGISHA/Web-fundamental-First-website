@@ -86,3 +86,87 @@ body {
     margin-right: 10px;
     
 }
+
+
+/* container  */
+
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Projects will be under grid layout */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}.project-card span {
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.about-text {
+    margin-bottom: 40px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team-card img {
+    width: 100%;
+
+}
+
+.team-card h3 {
+    margin-top: 15px;
+}
+.team-card span {
+    color: gray;
+    margin: 10px 0;
+}
+
+.team-card button {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    /* these make our cursor how hand form  */
+    cursor: pointer; 
+    background: #eee;
+    transition: 0.3s;
+}
+
+.team-card button:hover {
+    background: #ddd;
+}

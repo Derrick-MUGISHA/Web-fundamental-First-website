@@ -20,9 +20,9 @@
 
     <!-- the navigation links -->
     <ul class="nav-links">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
     </ul>
     </nav>
 
@@ -44,7 +44,7 @@
     <main class="container">
 
         <!-- Projects Section -->
-        <section>
+        <section id="Projects">
             
             <h2>Projects</h2>
 
@@ -88,7 +88,7 @@
         </section>
 
         <!-- About Section -->
-        <section>
+        <section id="About">
             <h2>About</h2>
             <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -128,13 +128,31 @@
         </section>
 
         <!-- Contact Section -->
-        <section>
+        <section id="Contact">
+            <h2>Contact Us</h2>
 
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+
+                <textarea placeholder="Message"></textarea>
+
+                <button type="submit">
+                    SEND MESSAGE
+                </button>
+            </form>
         </section>
 
-
-
+        <!-- image SECTION -->
+        <section id="Image">
+            <img src="/images/image copy 13.png" alt="Architecture" class="image" />
+        </section>
+        
     </main>
-
+    <footer>
+            <p>&copy; 2024 BR Architects. All rights reserved.</p>
+        </footer>
 </body>
 </html>

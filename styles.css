@@ -107,7 +107,6 @@ section h2 {
     padding-bottom: 15px;
     font-size: 28px;
 }
-
 /* Projects will be under grid layout */
 
 .project-grid {
@@ -145,7 +144,7 @@ section h2 {
 
 .team-card img {
     width: 100%;
-
+    filter: grayscale(70%);
 }
 
 .team-card h3 {
@@ -169,4 +168,68 @@ section h2 {
 
 .team-card button:hover {
     background: #ddd;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.contact-form button {
+    width: fit-content;
+    padding: 14px 28px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+     .nav-links {
+        gap: 15px;
+     }
+
+     .hero img {
+        height: 70vh;
+     }
+
+     .hero-text h1 {
+        font-size: 28px;
+        text-align: center;
+     }
+}
+
+@media (max-width: 600px) {
+    .project-grid,
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
 }
